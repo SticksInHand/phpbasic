@@ -16,6 +16,11 @@
 
 <?php include 'footer.php';  ?>
 
+<?php
+include 'vars.php';
+echo "我有一辆".$color.$car."。";
+?>
+
 </body>
 </html>
 
