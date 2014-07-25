@@ -15,7 +15,13 @@ else
 }
 //创建数据表
 mysql_select_db("my_db",$con);
-$sql = "CREATE TABLE Persons(FirstName varchar(15),LastName varchar(15),Age int)";
+$sql = "CREATE TABLE Persons(
+personID int NOT NULL AUTO_INCREMENT,
+PRIMARY KEY(personID),
+FirstName varchar(15),
+LastName varchar(15),
+Age int
+)";
 
 mysql_query($sql,$con);
 
